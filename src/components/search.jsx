@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import _ from "lodash";
 import Card from "../components/card";
 
 export default function Search(props) {
@@ -9,7 +10,8 @@ export default function Search(props) {
   function handleChange() {
     setClick(false);
     let text = event.target.value;
-    setType(text);
+    let something = _.lowerCase(text);
+    setType(something);
   }
   function clicked(event) {
     async function getPokemon(name) {
