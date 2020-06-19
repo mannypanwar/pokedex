@@ -7,7 +7,7 @@ export default function Search(props) {
   const [type, setType] = useState("");
   const [click, setClick] = useState(false);
 
-  function handleChange() {
+  function handleChange(event) {
     setClick(false);
     let text = event.target.value;
     let something = _.lowerCase(text);
