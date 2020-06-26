@@ -60,6 +60,7 @@ h2 {
   background-color: antiquewhite;
   border-radius: 1rem;
   padding: 1.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 p {
   font-family: "pkmn_rbygscregular";
@@ -71,12 +72,14 @@ p {
   height: 210px;
   width: 200.5px;
   display: block;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .poke-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .text {
   margin-top: 10px;
