@@ -20,10 +20,8 @@ h2 {
   display: flex;
   flex-direction: column;
   height: 100%;
-    margin-left: 15%;
+  margin-left: 15%;
   margin-right: 15%;
-
-  
 }
 .form-control {
   border-radius: 1rem;
@@ -41,6 +39,7 @@ h2 {
 }
 .search {
   background-color: #dddddd;
+  padding: 0.5rem;
 }
 .something {
   display: flex;
@@ -66,8 +65,8 @@ p {
   font-family: "pkmn_rbygscregular";
 }
 .pokemon {
-    padding: 2.5rem 2.5rem;
-  }
+  padding: 2.5rem 2.5rem;
+}
 .poke-img {
   height: 210px;
   width: 200.5px;
@@ -92,7 +91,7 @@ p {
   .search {
     padding: 0.5rem 2.5rem;
   }
-  
+
   .poke-card {
     padding: 2rem;
   }
