@@ -10,7 +10,7 @@ Link [👨‍💻](https://m-pokedex.netlify.app/)
 
 Search name of a pokemon and his picture with skills will be displayed below in a card.
 
-![Pokedex App Screenshot!](/screenshot.png "Pokedex App Screenshot")
+<img src="screenshot.png" alt="alt text" width="300px">
 
 ## Resources used
 
