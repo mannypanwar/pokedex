@@ -3,7 +3,7 @@ import _ from "lodash";
 import Card from "../components/card";
 
 export default function Search(props) {
-  const [poke, setPoke] = useState("bulbasaur");
+  const [poke, setPoke] = useState("");
   const [type, setType] = useState("");
   const [click, setClick] = useState(false);
 
@@ -13,6 +13,7 @@ export default function Search(props) {
     let something = _.lowerCase(text);
     setType(something);
   }
+
   function clicked(event) {
     async function getPokemon(name) {
       let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
@@ -20,7 +21,7 @@ export default function Search(props) {
       return data;
     }
 
-    getPokemon(type).then(data => {
+    getPokemon(type).then((data) => {
       setPoke(data);
       setClick(true);
     });
@@ -46,7 +47,9 @@ export default function Search(props) {
           </div>
         </form>
       </section>
-      <Card name={poke} click={click} />
+      <section className="pokemon">
+        {click && <Card name={poke} click={click} />}
+      </section>
     </>
   );
 }
