@@ -38,7 +38,13 @@ export default function Search(props) {
               className="form-control"
               placeholder="Pokemon name"
               onChange={handleChange}
+              list="select"
             />
+            <datalist id="select">
+              <option value="charmander" />
+              <option value="ditto" />
+              <option value="bulbasaur" />
+            </datalist>
             <span className="input-group-btn">
               <button onClick={clicked} className="btn">
                 <i className="fas fa-search " />
