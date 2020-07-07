@@ -18,6 +18,7 @@ Search name of a pokemon and his picture with skills will be displayed below in 
 - PokéAPI [🔗](https://pokeapi.co/)
 - Bootstrap [🔗](https://getbootstrap.com/)
 - FontAwesome [🔗](https://fontawesome.com/)
+- Gsap Animation [🔗](https://greensock.com/gsap/)
 
 ## Learning
 
